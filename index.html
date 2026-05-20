@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado Popular – Venturosa, PE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vermelho: #C44133;
+      --vermelho-escuro: #932D1F;
+      --verde: #184F2F;
+      --bege: #F4D0A0;
+      --dourado: #CD974C;
+      --branco: #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: var(--bege);
+      color: var(--vermelho-escuro);
+    }
+
+    /* HEADER */
+    header {
+      background-color: var(--verde);
+      padding: 28px 48px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-icon {
+      width: 56px;
+      height: 56px;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text span:first-child {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--dourado);
+      text-transform: uppercase;
+    }
+
+    .logo-text span:last-child {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--branco);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* HERO */
+    .hero {
+      background-color: var(--vermelho);
+      padding: 80px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--branco);
+      text-transform: uppercase;
+      line-height: 1.1;
+      letter-spacing: 2px;
+    }
+
+    .hero-text h1 span {
+      color: var(--bege);
+    }
+
+    .hero-text p {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      color: var(--bege);
+      margin-top: 20px;
+      max-width: 480px;
+      line-height: 1.7;
+      font-style: italic;
+    }
+
+    .hero-badge {
+      background-color: var(--verde);
+      color: var(--branco);
+      padding: 24px 32px;
+      border-radius: 4px;
+      text-align: center;
+      min-width: 180px;
+      flex-shrink: 0;
+    }
+
+    .hero-badge .year {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .hero-badge .since {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--dourado);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* INFO */
+    .info-section {
+      padding: 72px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .info-card {
+      background-color: var(--branco);
+      border-radius: 4px;
+      padding: 40px;
+      border-top: 5px solid var(--vermelho);
+    }
+
+    .info-card h2 {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--dourado);
+      margin-bottom: 20px;
+    }
+
+    .info-card p, .info-card address {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      line-height: 1.8;
+      font-style: normal;
+      color: #333;
+    }
+
+    .info-card strong {
+      color: var(--vermelho-escuro);
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700;
+    }
+
+    .cnpj-tag {
+      display: inline-block;
+      background-color: var(--bege);
+      color: var(--verde);
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      border-radius: 3px;
+      margin-top: 12px;
+      border: 2px solid var(--verde);
+    }
+
+    /* SOBRE */
+    .sobre-section {
+      background-color: var(--verde);
+      padding: 72px 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .sobre-section h2 {
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--branco);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+
+    .sobre-section h2 span {
+      color: var(--dourado);
+    }
+
+    .sobre-section p {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      color: var(--bege);
+      line-height: 1.9;
+      margin-top: 20px;
+    }
+
+    .atributos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .atributo {
+      background-color: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 4px;
+      padding: 18px 20px;
+      color: var(--branco);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .atributo::before {
+      content: '—';
+      color: var(--dourado);
+      margin-right: 8px;
+    }
+
+    /* CONTATO */
+    .contato-section {
+      background-color: var(--vermelho-escuro);
+      padding: 64px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .contato-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--branco);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .contato-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contato-item {
+      font-family: 'Lora', serif;
+      color: var(--bege);
+      font-size: 16px;
+    }
+
+    .contato-item strong {
+      font-family: 'Josefin Sans', sans-serif;
+      color: var(--dourado);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #111;
+      padding: 28px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #666;
+      letter-spacing: 1px;
+    }
+
+    footer p span {
+      color: var(--dourado);
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 20px 24px; }
+      .hero { flex-direction: column; padding: 48px 24px; }
+      .hero-text h1 { font-size: 32px; }
+      .info-section { grid-template-columns: 1fr; padding: 40px 24px; }
+      .sobre-section { grid-template-columns: 1fr; padding: 48px 24px; }
+      .contato-section { flex-direction: column; padding: 48px 24px; }
+      footer { flex-direction: column; gap: 8px; padding: 20px 24px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M28 30 Q20 30 20 38 L20 72 Q20 80 28 80 L72 80 Q80 80 80 72 L80 38 Q80 30 72 30 Z" fill="#F4D0A0"/>
+      <rect x="36" y="44" width="8" height="24" rx="3" fill="#C44133"/>
+      <rect x="46" y="44" width="8" height="24" rx="3" fill="#C44133"/>
+      <rect x="56" y="44" width="8" height="24" rx="3" fill="#C44133"/>
+      <path d="M32 30 Q32 18 38 18 Q44 18 44 26" stroke="#F4D0A0" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M56 26 Q56 18 62 18 Q68 18 68 30" stroke="#F4D0A0" stroke-width="5" stroke-linecap="round" fill="none"/>
+    </svg>
+    <div class="logo-text">
+      <span>Mercadinho e Frigorífico</span>
+      <span>Supermercado Popular</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Tradição <span>familiar</span><br>no coração<br>de Venturosa</h1>
+      <p>Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios. Atendendo a comunidade de Venturosa, Pernambuco, desde 2007.</p>
+    </div>
+    <div class="hero-badge">
+      <div class="year">2007</div>
+      <div class="since">Desde</div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info-section">
+    <div class="info-card">
+      <h2>Dados Empresariais</h2>
+      <address>
+        <strong>Razão Social</strong><br>
+        Edivaldo Bezerra Alves<br><br>
+        <strong>Nome Fantasia</strong><br>
+        Mercadinho e Frigorífico Popular<br><br>
+        <strong>CNPJ</strong><br>
+        <div class="cnpj-tag">08.935.303/0001-08</div><br><br>
+        <strong>Natureza Jurídica</strong><br>
+        Empresário Individual — Microempresa<br><br>
+        <strong>Atividade Principal (CNAE)</strong><br>
+        4712-1/00 — Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios
+      </address>
+    </div>
+
+    <div class="info-card">
+      <h2>Endereço e Contato</h2>
+      <address>
+        <strong>Endereço</strong><br>
+        Rua Antônio Beliu, nº 80<br>
+        Centro – Venturosa / PE<br>
+        CEP: 55270-000<br><br>
+        <strong>Telefone</strong><br>
+        (87) 3833-1888<br><br>
+        <strong>E-mail</strong><br>
+        contato@supermercadopopular.org<br><br>
+        <strong>Site</strong><br>
+        supermercadopopular.org<br><br>
+        <strong>Situação Cadastral</strong><br>
+        Ativa — desde 10/07/2007
+      </address>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre-section">
+    <div>
+      <h2>Acolhedora,<br><span>confiável</span><br>e familiar</h2>
+      <p>O Supermercado Popular é uma marca de tradição familiar, focada no sucesso de seus clientes através da união de conforto e preço justo. Uma referência no comércio local de Venturosa há mais de 17 anos.</p>
+    </div>
+    <div class="atributos">
+      <div class="atributo">Acolhedora</div>
+      <div class="atributo">Confiável</div>
+      <div class="atributo">Familiar</div>
+      <div class="atributo">Acessível</div>
+      <div class="atributo">Sofisticada</div>
+      <div class="atributo">Amigável</div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato-section">
+    <h2>Fale<br>conosco</h2>
+    <div class="contato-items">
+      <div class="contato-item">
+        <strong>Endereço</strong>
+        Rua Antônio Beliu, 80 – Centro, Venturosa – PE, CEP 55270-000
+      </div>
+      <div class="contato-item">
+        <strong>Telefone</strong>
+        (87) 3833-1888
+      </div>
+      <div class="contato-item">
+        <strong>E-mail</strong>
+        contato@supermercadopopular.org
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2007–2025 <span>Supermercado Popular</span> — CNPJ 08.935.303/0001-08</p>
+    <p>Venturosa, Pernambuco — Brasil</p>
+  </footer>
+
+</body>
+</html>
