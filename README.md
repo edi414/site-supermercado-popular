@@ -39,7 +39,7 @@ A página está dividida em seções semânticas claras, facilitando tanto a lei
 ### B. Seção Hero (`<section class="hero">`)
 *   O topo da página traz o slogan: **"Tradição familiar no coração de Venturosa"**.
 *   Inclui um parágrafo explicativo da atuação principal do supermercado.
-*   Contém um distintivo de destaque com o ano de fundação (**"Desde 2015"**), reforçando a credibilidade e tempo de mercado da empresa.
+*   Contém um distintivo de destaque com o ano de fundação (**"Desde 2007"**), reforçando a credibilidade e tempo de mercado da empresa.
 
 ### C. Seção de Informações (`<section class="info-section">`)
 Organizada em um grid de duas colunas, apresenta cartões brancos com borda superior vermelha contendo os principais dados da empresa:
@@ -53,7 +53,7 @@ Organizada em um grid de duas colunas, apresenta cartões brancos com borda supe
     *   Endereço físico completo no Centro de Venturosa, PE.
     *   Telefone: `(87) 3833-1888`
     *   E-mail de contato e link do site.
-    *   Situação Cadastral: Ativa desde 10/07/2015.
+    *   Situação Cadastral: Ativa desde 10/07/2007.
 
 ### D. Seção Sobre (`<section class="sobre-section">`)
 *   Reforça o posicionamento da marca com o título **"Acolhedora, confiável e familiar"**.
@@ -64,7 +64,7 @@ Organizada em um grid de duas colunas, apresenta cartões brancos com borda supe
 *   Repete de forma simplificada o Endereço, Telefone e E-mail.
 
 ### F. Rodapé (`<footer>`)
-*   Exibe os direitos autorais com o intervalo de funcionamento e dados de registro (`© 2015–2025 Supermercado Popular — CNPJ 08.935.303/0001-08`).
+*   Exibe os direitos autorais com o intervalo de funcionamento e dados de registro (`© 2007–2025 Supermercado Popular — CNPJ 08.935.303/0001-08`).
 *   Informa a localização: *Venturosa, Pernambuco — Brasil*.
 
 ---
