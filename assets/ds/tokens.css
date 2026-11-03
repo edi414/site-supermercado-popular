@@ -1,0 +1,179 @@
+:root {
+  /* Supermercado Popular — tokens v1. Fonte da verdade: tokens.json */
+
+  /* Cores de marca */
+  --sp-vermelho: #C44133;
+  --sp-vinho: #932D1F;
+  --sp-mostarda: #CD974C;
+  --sp-verde: #184F2F;
+  --sp-creme: #F4D0A0;
+  --sp-branco: #FFFFFF;
+
+  /* Escalas */
+  --sp-vermelho-50: #FAEEE9;
+  --sp-vermelho-100: #F6DFD9;
+  --sp-vermelho-200: #ECC1BA;
+  --sp-vermelho-300: #E29F96;
+  --sp-vermelho-400: #D37266;
+  --sp-vermelho-500: #C44133;
+  --sp-vermelho-600: #A93A2E;
+  --sp-vermelho-700: #8F3328;
+  --sp-vermelho-800: #712B22;
+  --sp-vermelho-900: #56241D;
+  --sp-vinho-50: #F6ECE8;
+  --sp-vinho-100: #EEDCD6;
+  --sp-vinho-200: #DCBAB3;
+  --sp-vinho-300: #C9958C;
+  --sp-vinho-400: #AF6358;
+  --sp-vinho-500: #932D1F;
+  --sp-vinho-600: #80291D;
+  --sp-vinho-700: #6E251B;
+  --sp-vinho-800: #582118;
+  --sp-vinho-900: #461D16;
+  --sp-mostarda-50: #FBF5EB;
+  --sp-mostarda-100: #F7EDDD;
+  --sp-mostarda-200: #EFDCC2;
+  --sp-mostarda-300: #E6CAA2;
+  --sp-mostarda-400: #DAB279;
+  --sp-mostarda-500: #CD974C;
+  --sp-mostarda-600: #B18243;
+  --sp-mostarda-700: #956D39;
+  --sp-mostarda-800: #76562F;
+  --sp-mostarda-900: #5A4126;
+  --sp-verde-50: #EDEFE9;
+  --sp-verde-100: #DAE1D9;
+  --sp-verde-200: #B5C5B8;
+  --sp-verde-300: #8CA694;
+  --sp-verde-400: #547C64;
+  --sp-verde-500: #184F2F;
+  --sp-verde-600: #19462A;
+  --sp-verde-700: #1A3C26;
+  --sp-verde-800: #1B3220;
+  --sp-verde-900: #1C291C;
+  --sp-creme-50: #FEF9F2;
+  --sp-creme-100: #FDF6EB;
+  --sp-creme-200: #FBEFDD;
+  --sp-creme-300: #FAE6CC;
+  --sp-creme-400: #F7DCB7;
+  --sp-creme-500: #F4D0A0;
+  --sp-creme-600: #D2B289;
+  --sp-creme-700: #B09473;
+  --sp-creme-800: #897259;
+  --sp-creme-900: #675542;
+  --sp-neutro-0: #FFFFFF;
+  --sp-neutro-25: #FFFDF9;
+  --sp-neutro-50: #FBF6EE;
+  --sp-neutro-100: #F3EBDF;
+  --sp-neutro-200: #E4D8C8;
+  --sp-neutro-300: #CDBDA9;
+  --sp-neutro-400: #A8967F;
+  --sp-neutro-500: #7F6E5B;
+  --sp-neutro-600: #5E4F41;
+  --sp-neutro-700: #43372D;
+  --sp-neutro-800: #2E241E;
+  --sp-neutro-900: #1E1512;
+
+  /* Semânticos */
+  --sp-bg: #FFFDF9;
+  --sp-bg-subtle: #FBF6EE;
+  --sp-bg-warm: #FBEFDD;
+  --sp-bg-brand: #C44133;
+  --sp-bg-deep: #184F2F;
+  --sp-surface: #FFFFFF;
+  --sp-border: #E4D8C8;
+  --sp-border-strong: #CDBDA9;
+  --sp-text: #1E1512;
+  --sp-text-muted: #5E4F41;
+  --sp-text-subtle: #7F6E5B;
+  --sp-text-on-brand: #FFFFFF;
+  --sp-text-brand: #C44133;
+  --sp-action: #C44133;
+  --sp-action-hover: #A93A2E;
+  --sp-action-press: #932D1F;
+  --sp-offer: #C44133;
+  --sp-offer-text: #FFFFFF;
+  --sp-highlight: #E6CAA2;
+  --sp-success: #547C64;
+  --sp-warning: #B18243;
+  --sp-danger: #A93A2E;
+  --sp-info: #2F5E7A;
+  --sp-focus: #CD974C;
+
+  /* Dados (relatórios/gráficos) — usar nesta ordem */
+  --sp-data-1: #C44133;
+  --sp-data-2: #184F2F;
+  --sp-data-3: #CD974C;
+  --sp-data-4: #932D1F;
+  --sp-data-5: #6E9C7E;
+  --sp-data-6: #E7B77A;
+  --sp-data-7: #43372D;
+  --sp-data-8: #D9806F;
+
+  /* Tipografia */
+  --sp-font-display: 'Josefin Sans', 'Futura', 'Century Gothic', system-ui, sans-serif;
+  --sp-font-text: 'DM Sans', 'Helvetica Neue', Arial, system-ui, sans-serif;
+  --sp-font-mono: 'DM Mono', ui-monospace, Menlo, monospace;
+  --sp-type-display-xl: 700 6rem/0.95 var(--sp-font-display);
+  --sp-tracking-display-xl: -0.02em;
+  --sp-type-display-l: 700 4.5rem/1.0 var(--sp-font-display);
+  --sp-tracking-display-l: -0.015em;
+  --sp-type-display-m: 700 3.5rem/1.05 var(--sp-font-display);
+  --sp-tracking-display-m: -0.01em;
+  --sp-type-h1: 700 2.75rem/1.1 var(--sp-font-display);
+  --sp-tracking-h1: -0.01em;
+  --sp-type-h2: 700 2.125rem/1.15 var(--sp-font-display);
+  --sp-tracking-h2: 0;
+  --sp-type-h3: 600 1.625rem/1.2 var(--sp-font-text);
+  --sp-tracking-h3: 0;
+  --sp-type-h4: 600 1.25rem/1.3 var(--sp-font-text);
+  --sp-tracking-h4: 0;
+  --sp-type-eyebrow: 700 0.8125rem/1.2 var(--sp-font-display);
+  --sp-tracking-eyebrow: 0.16em;
+  --sp-type-body-l: 400 1.188rem/1.55 var(--sp-font-text);
+  --sp-tracking-body-l: 0;
+  --sp-type-body: 400 1rem/1.6 var(--sp-font-text);
+  --sp-tracking-body: 0;
+  --sp-type-body-s: 400 0.875rem/1.5 var(--sp-font-text);
+  --sp-tracking-body-s: 0;
+  --sp-type-caption: 500 0.75rem/1.4 var(--sp-font-text);
+  --sp-tracking-caption: 0.02em;
+
+  /* Espaço (base 4px) */
+  --sp-space-0: 0rem;
+  --sp-space-1: 0.25rem;
+  --sp-space-2: 0.5rem;
+  --sp-space-3: 0.75rem;
+  --sp-space-4: 1rem;
+  --sp-space-5: 1.25rem;
+  --sp-space-6: 1.5rem;
+  --sp-space-8: 2rem;
+  --sp-space-10: 2.5rem;
+  --sp-space-12: 3rem;
+  --sp-space-16: 4rem;
+  --sp-space-20: 5rem;
+  --sp-space-24: 6rem;
+  --sp-space-32: 8rem;
+
+  /* Raio — "cantos arredondados mostrando proximidade" */
+  --sp-radius-xs: 4px;
+  --sp-radius-s: 8px;
+  --sp-radius-m: 14px;
+  --sp-radius-l: 22px;
+  --sp-radius-xl: 32px;
+  --sp-radius-pill: 999px;
+
+  /* Sombra */
+  --sp-shadow-s: 0 1px 2px rgba(30,21,18,.08), 0 1px 1px rgba(30,21,18,.04);
+  --sp-shadow-m: 0 6px 18px -6px rgba(30,21,18,.18);
+  --sp-shadow-l: 0 24px 48px -16px rgba(30,21,18,.28);
+  --sp-shadow-sticker: 0 3px 0 rgba(30,21,18,.18);
+
+  /* Movimento */
+  --sp-ease-out: cubic-bezier(.22,1,.36,1);
+  --sp-ease-bounce: cubic-bezier(.34,1.56,.64,1);
+  --sp-ease-in-out: cubic-bezier(.65,0,.35,1);
+  --sp-dur-fast: 140ms;
+  --sp-dur-base: 260ms;
+  --sp-dur-slow: 520ms;
+  --sp-dur-reveal: 900ms;
+}

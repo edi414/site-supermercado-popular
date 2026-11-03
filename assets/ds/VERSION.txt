@@ -1,0 +1,3 @@
+Cópia do design system Supermercado Popular v1
+Origem: ds-supermercado-popular/supermercado-popular-design-system/assets (commit 3a61e8b)
+Não edite aqui. Atualize no repo do DS e copie de novo.
