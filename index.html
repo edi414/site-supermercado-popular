@@ -116,6 +116,22 @@
       </div>
     </div>
 
+    <section class="fazenda" aria-label="Fotos da fazenda da família">
+      <figure class="fazenda__foto" data-reveal>
+        <picture>
+          <source type="image/webp" srcset="assets/img/por-do-sol-700.webp 700w, assets/img/por-do-sol-1100.webp 1100w" sizes="(min-width: 700px) 50vw, 100vw">
+          <img src="assets/img/por-do-sol-800.jpg" alt="Pasto da fazenda ao pôr do sol, com cavaleiro e serra ao fundo" width="800" height="600" loading="lazy">
+        </picture>
+        <figcaption class="fazenda__legenda">Fazenda da família</figcaption>
+      </figure>
+      <figure class="fazenda__foto" data-reveal style="--d:120ms">
+        <picture>
+          <source type="image/webp" srcset="assets/img/pasto-700.webp 700w, assets/img/pasto-1100.webp 1100w" sizes="(min-width: 700px) 50vw, 100vw">
+          <img src="assets/img/pasto-800.jpg" alt="Pasto verde com uma árvore grande e serra no horizonte" width="800" height="600" loading="lazy">
+        </picture>
+      </figure>
+    </section>
+
     <section class="secao acougue" id="acougue" aria-labelledby="acougue-titulo">
       <div class="wrap acougue__in">
         <div class="acougue__fotos">
@@ -128,8 +144,14 @@
           </figure>
           <figure class="acougue__apoio" data-reveal="pop" style="--d:160ms">
             <picture>
-              <source type="image/webp" srcset="assets/img/gado-640.webp 640w" sizes="(min-width: 900px) 16vw, 40vw">
+              <source type="image/webp" srcset="assets/img/gado-640.webp 640w" sizes="(min-width: 900px) 18vw, 45vw">
               <img src="assets/img/gado-800.jpg" alt="Gado branco no curral da fazenda" width="800" height="1067" loading="lazy">
+            </picture>
+          </figure>
+          <figure class="acougue__apoio" data-reveal="pop" style="--d:240ms">
+            <picture>
+              <source type="image/webp" srcset="assets/img/garrote-640.webp 640w" sizes="(min-width: 900px) 18vw, 45vw">
+              <img src="assets/img/garrote-640.jpg" alt="Garrote branco no pasto, perto de uma árvore" width="640" height="800" loading="lazy">
             </picture>
           </figure>
           <!-- TODO foto: balcão do açougue com carne cortada (e alguém da equipe). Quando chegar, entra como terceira foto aqui. -->
@@ -149,21 +171,63 @@
       </div>
     </section>
 
-    <section class="secao duo" aria-label="Entrega e promoções">
-      <div class="wrap duo__in">
-        <article class="bloco bloco--entrega" id="entrega" data-reveal>
-          <p class="sp-eyebrow">Entrega</p>
-          <h2 class="titulo-bloco">Entrega grátis em Venturosa</h2>
-          <p class="sp-body-l">Mande a lista pelo WhatsApp e a gente leva até sua casa.</p>
-          <a class="sp-btn sp-btn--creme" href="https://wa.me/5587991144004?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20mandar%20minha%20lista%20para%20entrega." target="_blank" rel="noopener">Mandar minha lista</a>
-        </article>
+    <section class="secao loja" id="na-loja" aria-labelledby="loja-titulo">
+      <div class="wrap">
+        <div class="loja__topo">
+          <div>
+            <p class="sp-eyebrow cor-vermelho" data-reveal>Na loja</p>
+            <h2 id="loja-titulo" class="titulo-secao" data-reveal style="--d:80ms">O que tem na loja</h2>
+          </div>
+          <p class="sp-body loja__pergunta" data-reveal style="--d:140ms">Procurando algum produto? <a href="https://wa.me/5587991144004?text=Ol%C3%A1!%20Vim%20pelo%20site.%20Voc%C3%AAs%20t%C3%AAm%20" target="_blank" rel="noopener">Pergunte no WhatsApp</a> antes de sair de casa.</p>
+        </div>
+        <ul class="loja__grade">
+          <li data-reveal><figure>
+            <picture><source type="image/webp" srcset="assets/img/frios-640.webp"><img src="assets/img/frios-640.jpg" alt="Freezer de congelados com frango, peru e salgados" width="640" height="800" loading="lazy"></picture>
+            <figcaption class="sp-tag">Frios e congelados</figcaption>
+          </figure></li>
+          <li data-reveal style="--d:80ms"><figure>
+            <picture><source type="image/webp" srcset="assets/img/bebidas-640.webp"><img src="assets/img/bebidas-640.jpg" alt="Prateleira de licores e gins" width="640" height="800" loading="lazy"></picture>
+            <figcaption class="sp-tag">Bebidas</figcaption>
+          </figure></li>
+          <li data-reveal style="--d:160ms"><figure>
+            <picture><source type="image/webp" srcset="assets/img/limpeza-640.webp"><img src="assets/img/limpeza-640.jpg" alt="Corredor de produtos de limpeza e papel higiênico" width="640" height="800" loading="lazy"></picture>
+            <figcaption class="sp-tag">Limpeza e higiene</figcaption>
+          </figure></li>
+          <li data-reveal style="--d:240ms"><figure>
+            <picture><source type="image/webp" srcset="assets/img/utilidades-640.webp"><img src="assets/img/utilidades-640.jpg" alt="Corredor de utilidades com xícaras, pratos e panelas" width="640" height="800" loading="lazy"></picture>
+            <figcaption class="sp-tag">Utilidades do lar</figcaption>
+          </figure></li>
+        </ul>
+      </div>
+    </section>
 
-        <article class="bloco bloco--promo" id="promocoes" data-reveal style="--d:120ms">
-          <p class="sp-eyebrow">Promoções</p>
-          <h2 class="titulo-bloco">As ofertas da semana saem no nosso Instagram</h2>
-          <p class="sp-body-l">Siga a gente para ver os preços antes de vir à loja.</p>
-          <a class="sp-btn sp-btn--creme" href="https://www.instagram.com/supermercadopopulaar/" target="_blank" rel="noopener">@supermercadopopulaar</a>
-        </article>
+    <section class="entrega" id="entrega" aria-labelledby="entrega-titulo">
+      <div class="wrap entrega__in" data-reveal>
+        <div>
+          <p class="sp-eyebrow">Entrega</p>
+          <h2 id="entrega-titulo" class="titulo-bloco">Entrega grátis em Venturosa</h2>
+          <p class="sp-body-l">Mande a lista pelo WhatsApp e a gente leva até sua casa.</p>
+        </div>
+        <a class="sp-btn sp-btn--creme sp-btn--l" href="https://wa.me/5587991144004?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20mandar%20minha%20lista%20para%20entrega." target="_blank" rel="noopener">Mandar minha lista</a>
+      </div>
+    </section>
+
+    <section class="secao insta" id="promocoes" aria-labelledby="insta-titulo">
+      <div class="wrap insta__in">
+        <div class="insta__texto">
+          <p class="sp-eyebrow" data-reveal>Promoções</p>
+          <h2 id="insta-titulo" class="titulo-secao" data-reveal style="--d:80ms">As ofertas da semana saem no nosso Instagram</h2>
+          <p class="sp-body-l" data-reveal style="--d:140ms">Siga a gente para ver os preços antes de vir à loja.</p>
+          <a class="sp-btn sp-btn--creme" data-reveal style="--d:200ms" href="https://www.instagram.com/supermercadopopulaar/" target="_blank" rel="noopener">@supermercadopopulaar</a>
+        </div>
+        <a class="insta__grade" href="https://www.instagram.com/supermercadopopulaar/" target="_blank" rel="noopener" aria-label="Ver as ofertas no Instagram @supermercadopopulaar">
+          <picture data-reveal="pop"><source type="image/webp" srcset="assets/img/ig-1-480.webp"><img src="assets/img/ig-1-480.jpg" alt="" width="480" height="480" loading="lazy"></picture>
+          <picture data-reveal="pop" style="--d:60ms"><source type="image/webp" srcset="assets/img/ig-2-480.webp"><img src="assets/img/ig-2-480.jpg" alt="" width="480" height="480" loading="lazy"></picture>
+          <picture data-reveal="pop" style="--d:120ms"><source type="image/webp" srcset="assets/img/ig-3-480.webp"><img src="assets/img/ig-3-480.jpg" alt="" width="480" height="480" loading="lazy"></picture>
+          <picture data-reveal="pop" style="--d:180ms"><source type="image/webp" srcset="assets/img/ig-4-480.webp"><img src="assets/img/ig-4-480.jpg" alt="" width="480" height="480" loading="lazy"></picture>
+          <picture data-reveal="pop" style="--d:240ms"><source type="image/webp" srcset="assets/img/ig-5-480.webp"><img src="assets/img/ig-5-480.jpg" alt="" width="480" height="480" loading="lazy"></picture>
+          <picture data-reveal="pop" style="--d:300ms"><source type="image/webp" srcset="assets/img/ig-6-480.webp"><img src="assets/img/ig-6-480.jpg" alt="" width="480" height="480" loading="lazy"></picture>
+        </a>
       </div>
     </section>
 
