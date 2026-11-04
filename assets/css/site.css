@@ -66,11 +66,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 .acougue__tags { display: flex; gap: var(--sp-space-2); }
 
 /* Fazenda: duas fotos de ponta a ponta */
-.fazenda { display: grid; grid-template-columns: 1fr; }
-@media (min-width: 700px) { .fazenda { grid-template-columns: 1fr 1fr; } }
 .fazenda__foto { position: relative; }
-.fazenda__foto img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
-@media (max-width: 699px) { .fazenda__foto + .fazenda__foto { display: none; } }
+.fazenda__foto img { width: 100%; height: auto; aspect-ratio: 16 / 7; object-fit: cover; }
+@media (max-width: 699px) { .fazenda__foto img { aspect-ratio: 4 / 3; } }
 .fazenda__legenda { position: absolute; left: clamp(16px, 3vw, 32px); bottom: clamp(16px, 3vw, 32px); padding: .5em .9em .4em; border-radius: var(--sp-radius-pill); background: var(--sp-creme); color: var(--sp-verde); font: 700 .75rem/1 var(--sp-font-display); letter-spacing: .14em; text-transform: uppercase; box-shadow: var(--sp-shadow-sticker); }
 
 /* Na loja */
